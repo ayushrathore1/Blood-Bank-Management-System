@@ -69,5 +69,5 @@ Pull requests are welcome! Please submit your suggestions or bug reports via Iss
 Distributed under the MIT License.
 
 ## ✍️ Author
-Ayush Rathore
-[GitHub Profile](https://github.com/ayushrathore1)
+Ayush Rathore [GitHub Profile](https://github.com/ayushrathore1)
+Govind Jangid [GitHub Profile](https://github.com/govindjangid75)
