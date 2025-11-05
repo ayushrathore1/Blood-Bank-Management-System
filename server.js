@@ -15,14 +15,22 @@ require("./models/BloodUnit");
 require("./models/Hospital");
 require("./models/Request");
 
-
-
 const app = express();
 
-app.use(cors());
+// CORS: Allow from local dev and deployed frontend
+const allowedOrigins = [
+  "http://localhost:5173",   // Vite dev server
+  "https://your-frontend-url.com", // <-- set this to your deployed frontend domain
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true, // allow cookies if you use them (else can be removed)
+}));
+
 app.use(express.json());
 
-// Routes
+// Routes START WITH /api
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/donors", require("./routes/donorRoutes"));
 app.use("/api/blood", require("./routes/bloodRoutes"));
