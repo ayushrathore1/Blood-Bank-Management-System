@@ -20,7 +20,7 @@ const app = express();
 // CORS: Allow from local dev and deployed frontend
 const allowedOrigins = [
   "http://localhost:5173",   // Vite dev server
-  "https://your-frontend-url.com", // <-- set this to your deployed frontend domain
+  "https://bbmsonline.vercel.app", // <-- set this to your deployed frontend domain
 ];
 
 app.use(cors({
