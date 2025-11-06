@@ -20,11 +20,10 @@ const app = express();
 // CORS: Allow from local dev and deployed frontend
 const allowedOrigins = [
   "http://localhost:5173",   // Vite dev server
-  "https://bbms-mvp.vercel.app", // <-- set this to your deployed frontend domain
+  "https://blood-bank-management-system-mvp-md.vercel.app", // <-- set this to your deployed frontend domain];
 ];
-
-app.use(cors({
-  origin: allowedOrigins,
+  app.use(cors({
+      origin: allowedOrigins,
   credentials: true, // allow cookies if you use them (else can be removed)
 }));
 
